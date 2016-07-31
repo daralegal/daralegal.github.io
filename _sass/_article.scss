@@ -161,6 +161,11 @@ article {
         }
       }
     }
+    &#thanks {
+      div.content {
+        padding-top: $base-spacing*2;
+      }
+    }
     aside {
       border-top: 1px solid #f1f2f2;
       margin-top: $base-spacing;
