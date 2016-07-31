@@ -143,7 +143,9 @@ article {
       }
     }
     &#fees {
-      background: #f1f2f2;
+      background: #f1f2f2 url(../img/books.jpg) no-repeat center center;
+      background-size: cover;
+      color: white;
       div.content {
         @media screen and (min-width: 980px) {
           @include span-columns(8 of 12);
