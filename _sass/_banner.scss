@@ -1,0 +1,11 @@
+section#banner {
+  //background: $blue;
+  //height: em(320);
+  img {
+    display: block;
+    height: auto;
+    @media screen and (min-width: 980px) {
+      width: 100%;
+    }
+  }
+}
