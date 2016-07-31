@@ -134,7 +134,8 @@ article {
         }
       }
       div.family {
-        background: $purple;
+        background: $purple url(../img/filtered.jpg) no-repeat center right;
+        background-size: cover;
         color: white;
       }
       div.civil {
