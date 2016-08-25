@@ -84,7 +84,7 @@ article {
       font-style: normal;
     }
   }
-  form {
+  div.location-info {
     margin-top: $base-spacing;
     @include span-columns(10 of 12);
     @include shift(1);
@@ -95,6 +95,19 @@ article {
     @media screen and (min-width: 980px) {
       @include span-columns(5 of 12);
       @include shift(0);
+    }
+  }
+  form {
+    margin-top: 0;
+    @include span-columns(10 of 12);
+    @include shift(1);
+    input[type="submit"] {
+      clear: both;
+      margin-top: $base-spacing;
+    }
+    @media screen and (min-width: 980px) {
+      @include span-columns(6 of 12);
+      @include shift(3);
     }
   }
   section {
@@ -153,6 +166,14 @@ article {
         }
       }
     }
+    &#location {
+      div.content {
+        @media screen and (min-width: 980px) {
+          @include span-columns(5 of 12);
+          @include shift(1);
+        }
+      }
+    }
     &#contact {
       div.content {
         @media screen and (min-width: 980px) {
@@ -180,4 +201,93 @@ article {
       }
     }
   }
+}
+
+div.more-content {
+  @include span-columns(10 of 12);
+  @include shift(1);
+  @media screen and (min-width: 980px) {
+    @include span-columns(5 of 12);
+    @include shift(0);
+  }
+}
+
+div.hours, div.parking {
+  margin-top: $small-spacing;
+  @media screen and (min-width: 980px) {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: modular-scale(-1);
+    font-weight: 600;
+    @media screen and (min-width: 640px) {
+      font-size: modular-scale(0);
+    }
+  }
+}
+
+div.parking {
+  margin-top: $base-spacing;
+}
+
+p.ttc {
+  margin-top: $small-spacing;
+}
+
+div.map-container {
+  margin-top: $base-spacing*1.5;
+  height: 200px;
+  background: url(../img/map.jpg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: $base-spacing*2;
+  @media screen and (min-width: 640px) {
+    height: 320px;
+  }
+}
+
+footer {
+  background: $turqouise;
+  padding: $small-spacing 0;
+  @media screen and (min-width: 980px) {
+    padding: $small-spacing*1.25 0;
+  }
+  div.wrapper {
+    @include outer-container();
+  }
+  ul {
+    text-align: right;
+    @include span-columns(10 of 12);
+    @include shift(1);
+    @media screen and (min-width: 980px) {
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      margin: 0 4px;
+      a {
+        width: 32px;
+        height: 32px;
+        display: block;
+        text-indent: 999em;
+        @media screen and (min-width: 980px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &.linkedin {
+        a {
+          background: url(../img/linkedin.svg) no-repeat center center;
+        }
+      }
+      &.facebook {
+        a {
+          background: url(../img/facebook.svg) no-repeat center center;
+        }
+      }
+    }
+  }
+}
+
+div.main {
+  overflow-x: hidden;
 }
