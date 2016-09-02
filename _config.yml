@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Dara Legal
 email: info@daralegal.com
-description: Dara is a lawyer serving the Greater Toronto Area.
+description: Dara is a lawyer serving the Greater Toronto Area in family law and civil litigation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://daralegal.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
