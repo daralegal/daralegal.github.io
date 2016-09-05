@@ -1,3 +1,19 @@
+
+h1.sub {
+  font-family: "freight-text-pro",sans-serif;
+  text-transform: none;
+  @include span-columns(10 of 12);
+  @include shift(1);
+  font-size: modular-scale(1);
+  margin-bottom: $small-spacing;
+  color: $purple;
+  @media screen and (min-width: 640px) {
+    font-size: modular-scale(3);
+  }
+  @media screen and (min-width: 980px) {
+    font-size: modular-scale(4);
+  }
+}
 article {
   overflow: auto;
   .element-invisible {
