@@ -152,13 +152,13 @@ article {
       }
       div.contain {
         @media screen and (min-width: 1280px) {
-          width: 66.66%;
+          width: 80%;
           margin: 0 auto;
         }
       }
       div.area {
         @media screen and (min-width: 980px) {
-          width: 50%;
+          width: 33.33%;
           float: left;
         }
       }
@@ -169,6 +169,10 @@ article {
       }
       div.civil {
         background: $turqouise;
+      }
+      div.business {
+        background: $purple;
+        color: white;
       }
     }
     &#fees {
