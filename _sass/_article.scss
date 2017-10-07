@@ -14,6 +14,37 @@ h1.sub {
     font-size: modular-scale(4);
   }
 }
+
+h2.sub {
+
+  font-family: "freight-text-pro",sans-serif;
+  text-transform: none;
+  font-size: modular-scale(1);
+  margin-top: $small-spacing;
+  margin-bottom: $small-spacing;
+  color: $purple;
+  @media screen and (min-width: 640px) {
+    font-size: modular-scale(1);
+  }
+  @media screen and (min-width: 980px) {
+    font-size: modular-scale(2);
+  }
+
+}
+
+h1.section {
+
+  @include span-columns(10 of 12);
+  @include shift(1);
+  font-size: modular-scale(-1);
+  text-transform: uppercase;
+  font-weight: 600;
+  @media screen and (min-width: 640px) {
+    font-size: modular-scale(0);
+  }
+
+}
+
 article {
   overflow: auto;
   .element-invisible {
@@ -218,6 +249,7 @@ article {
         @include shift(0);
         margin-top: 0;
         border-top: 0;
+        padding-top: 0;
       }
     }
   }
